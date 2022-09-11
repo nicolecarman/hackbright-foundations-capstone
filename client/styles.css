@@ -1,0 +1,156 @@
+body {
+    background-color: #FDFBF9;
+    font-family: 'Merriweather', serif;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+}
+nav {
+    text-align: center;
+}
+#nav li {
+    display: inline;
+    padding: 20px;
+}
+#nav a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #F4ACB7;
+}
+a:hover {
+    color: #D8E2DC;
+}
+#home-buttons {
+    font-family: 'Merriweather', serif;
+    background-color: #D8E2DC;
+    width: 150px;
+    height: 50px;
+}
+.content {
+    padding-top: 75px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#addCatFactBtn {
+    width: 130px;
+    height: 35px;
+}
+input[type='text'] {
+    width: 70%;
+    height: 30px;
+}
+#addFact {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#ratings-container {
+    width: 30%;
+}
+#catFacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fact-card {
+    background-color: #D8E2DC;
+    border: 1px solid #9D8189;
+    width: 250px;
+    height: 250px;
+    margin: 20px; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.fact-text {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.btns-container {
+    width: 100%; 
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+}
+.btns-container > button {
+    width: 60px;
+    height: 60px;
+    background-color: #D8E2DC;
+    border: none;
+}
+.spacer {
+    height: 150px;
+}
+#paws {
+    max-height: 45px;
+    width: auto;
+}
+.copyright {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* MAGIC CAT BALL BUTTON */
+.sizing {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+#center-button {
+    margin-left: 420px;
+}
+#askTheCatBtn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: #D8E2DC;
+  border: 1px solid #FFFFFF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #9D8189;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+#askTheCatBtn:hover {
+  transition: 1s ease-in-out;
+  background: #FFCAD4;
+}
+#askTheCatBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+#askTheCatBtn span {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+}
+#answer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cat-img {
+    max-width: 350px;
+    height: auto;
+}
+#answer-card {
+    text-align: center;
+    display: flex;
+    align-items:center;
+    padding-left: 50px;
+}

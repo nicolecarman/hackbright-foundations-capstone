@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meows & games - magic cat ball</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/meows&games.png">
+        </div>
+
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat-facts.html">Cat Facts</a></li>
+            <li><a href="magic-cat-ball.html">Magic Cat Ball</a></li>
+            <li><a href="meow-tac-toe.html">Meow-Tac-Toe</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main>
+        <section class="content">
+            <h2>Magic Cat Ball</h2>
+
+            <p>Welcome to our Magic Cat Ball game! This game is similar to the classic Magic 8 Ball game we all know and love. However, this time you'll be getting answers from a cat.</p>
+
+            <p>Ask the cat a "yes" or "no" question. When you're ready, click the button below to get your answer!</p>
+            
+            <br><br><br>
+
+            <div id="center-button" style="padding-bottom: 100px">
+                <div class="sizing">
+                    <button id="askTheCatBtn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" /></svg>
+                        <span>Ask the cat</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="answer-container">
+                <div id="cat-img"><img src="images/magic-cat-ball-kitty.png" id="cat-img"></div>
+                
+                <section id="answer-card"></section>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+    </main>
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ⓒ 2022 meows & games</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="magic-cat-ball.js"></script>
+</body>
+</html>

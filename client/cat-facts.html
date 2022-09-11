@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meows & games - cat facts!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/meows&games.png">
+        </div>
+
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat-facts.html">Cat Facts</a></li>
+            <li><a href="magic-cat-ball.html">Magic Cat Ball</a></li>
+            <li><a href="meow-tac-toe.html">Meow-Tac-Toe</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main>
+        <section class="content">
+            <h2>Cat Facts</h2>
+
+            <p>Check out our database of cat facts! If you like any of our facts, give them a paw's up to let other's know that it's a good fact!</p>
+
+            <p>If you're a cat fanatic like us and want to add a cat fact of your own, fill out the form at the bottom of the page. Your cat fact will start out with 1 paw, and people who enjoyed reading your cat fact will be able to give it some paws' up!</p>
+            
+            <br><br><br>
+  
+            <h3>Did you know?</h3>
+            <section id="catFacts-list"></section>
+
+            <br><br><br><br>
+
+            <section id="addFact">
+                <h2>Want to add a cat fact?</h2>
+                <p>If you're a cat lover and are dying to share a cat fact with us, please fill out the form below to add your cat fact to our database of cat facts! The more paws your cat fact receives, the more people liked it!</p>
+
+                <br>
+
+                <form>
+                    <input 
+                    type='text'
+                    id="fact-text"
+                    placeholder="What's your cat fact?"/>
+      
+                    <button id="addCatFactBtn">Add my cat fact!</button>
+                </form>
+            </section>
+        </section>
+
+        <div class="spacer"></div>
+    </main>
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ⓒ 2022 meows & games</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="cat-facts.js"></script>
+</body>
+</html>

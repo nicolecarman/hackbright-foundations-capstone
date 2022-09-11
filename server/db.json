@@ -1,0 +1,47 @@
+[
+  {
+      "id": 1,
+      "fact": "A cat’s brain is biologically more similar to a human brain than it is to a dog’s. Both humans and cats have identical regions in their brains that are responsible for emotions.",
+      "rating": 9
+  },
+  {
+      "id": 2,
+      "fact": "Hissing is a sign of fear, stress or discomfort, not of aggression.",
+      "rating": 11
+  },
+  {
+      "id": 3,
+      "fact": "If your cat approaches you with a straight, almost vibrating tail, this means that he/she is extremely happy to see you.",
+      "rating": 21
+  },
+  {
+      "id": 4,
+      "fact": "Most cats are lactose intolerant and should not be given cow's milk.",
+      "rating": 16
+  },
+  {
+      "id": 5,
+      "fact": "You can tell your cat you love them by making eye contact with them and blinking slowly while they're calm and relaxing. There's a good chance that your cat will slow-blink back, letting you know they love you!",
+      "rating": 14
+  },
+  {
+      "id": 6,
+      "fact": "Cats are the only mammals that cannot taste anything sweet.",
+      "rating": 24
+  },
+  {
+      "id": 7,
+      "fact": "A cat's whiskers are as long as their body is wide. This helps let your cat know if they can fit through spaces. If the whiskers fit, they know they will!",
+      "rating": 8
+  },
+  {
+      "id": 8,
+      "fact": "Cats can make more than 100 different vocal sounds.",
+      "rating": 10
+  },
+  {
+      "id": 9,
+      "fact": "A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.",
+      "rating": 17
+  }
+]
