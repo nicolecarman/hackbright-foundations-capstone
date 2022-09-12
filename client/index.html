@@ -8,6 +8,7 @@
     <title>meows & games</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <nav>
         <ul id="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="cat-facts.html">Cat Facts</a></li>
+            <li><a href="cat-facts.html">Cat Facts!</a></li>
             <li><a href="magic-cat-ball.html">Magic Cat Ball</a></li>
             <li><a href="meow-tac-toe.html">Meow-Tac-Toe</a></li>
         </ul>
@@ -28,14 +29,24 @@
 
 
     <main class="content">
-        <h3>Pick a Game!</h3>
-            <div id="game-buttons">
-                <button id="home-buttons"><a href="cat-facts.html">Cat Fact</a></button>
+        <h3>Hello there!</h3>
 
-                <button id="home-buttons"><a href="magic-cat-ball.html">Magic Cat Ball</a></button>
+        <p>Welcome to meows & games -- a fun web app for cat fanatics!</p>
 
-                <button id="home-buttons"><a href="meow-tac-toe.html">Meow Tac Toe</a></button>
-            </div>
+        <section>
+            <img src="images/pusheen-sit.png" id="cat-facts-pusheen">
+            <p id="home-ptags">If you think cats are interesting creatures and you'd like to learn more about them, our <a href="cat-facts.html">Cat Facts!</a> database is a great place for you to start. You can peruse our database of cat facts, rate the ones you like by giving them a "paws up," and even add your own interesting cat facts!</p>
+        </section>
+
+        <section>
+            <img src="images/pusheen-loaf.png" id="magic-cat-ball-pusheen">
+            <p id="home-ptags">If you've ever asked the classic Magic 8 Ball a question, you're already familiar with how our Magic Cat Ball works. All you do is ask the cat a "yes" or "no" question and you'll get a somewhat reasonable answer based on how the cat is feeling today. Head on over to our <a href="magic-cat-ball.html">Magic Cat Ball</a> game to get your questions answered!</p>
+        </section>
+
+        <section>
+            <img src="images/pusheen-donut.png" id="meow-tac-toe-pusheen">
+            <p id="home-ptags">If a twist on an oldie but goodie sounds interesting to you, check out our version of tic-tac-toe: <a href="meow-tac-toe.html">Meow-Tac-Toe</a>! Select either X or O and play against the computer in this classic family favorite.</p>
+        </section>
     
 
     <div class="spacer"></div>
@@ -44,11 +55,12 @@
 
     <footer>
         <div class="copyright">
+
             <p>Copyright ⓒ 2022 meows & games</p>
         </div>
     </footer>
 
-
+    
 
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="cat-facts.js"></script>
