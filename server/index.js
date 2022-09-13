@@ -3,6 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
+require('dotenv').config();
+
 const app = express();
 
 app.use(express.json());
@@ -69,6 +71,6 @@ app.get("/api/answers", getAnswer);
 
 
 // listening
-app.listen(process.env.PORT || 4000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server listening", this.address().port, app.settings.env);
   });
