@@ -3,10 +3,16 @@ const catFactsList = document.querySelector('#display-answers');
 
 const askTheCatBtn = document.getElementById("askTheCatBtn");
 
+// for deployment to netlify
+const port = process.env.PORT || 4000;
+
+// set API to variable
+//const baseURL = `http://localhost:4000/api/catfacts`;
+
 
 // axios request
 const getAnswer = () => {
-    axios.get("http://localhost:4000/api/answers/")
+    axios.get(port, "/api/answers/")
         .then(res => {
             const data = res.data;
 
