@@ -41,4 +41,6 @@ app.get("/api/answers", getAnswer);
 
 
 // listening
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(process.env.PORT || 4000, function(){
+    console.log("Server listening", this.address().port, app.settings.env);
+  });

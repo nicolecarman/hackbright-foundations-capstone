@@ -3,7 +3,7 @@ const catFactsList = document.querySelector('#catFacts-list');
 const form = document.querySelector('form');
 
 // for deployment to netlify
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 // set API to variable
 //const baseURL = `http://localhost:4000/api/catfacts`;
@@ -12,11 +12,11 @@ const port = process.env.PORT || 4000;
 // axios requests
 const factsCallback = ({ data: catFacts }) => displayCatFacts(catFacts);
 
-const getAllFacts = () => axios.get(`${port}/api/catfacts`).then(factsCallback);
+const getAllFacts = () => axios.get(`${PORT}/api/catfacts`).then(factsCallback);
 
-const editCatFact = (id, type) => axios.put(`${port}/api/catfacts/${id}`, {type}).then(factsCallback);
+const editCatFact = (id, type) => axios.put(`${PORT}/api/catfacts/${id}`, {type}).then(factsCallback);
 
-const addCatFact = body => axios.post(port/api/catfacts, body).then(factsCallback);
+const addCatFact = body => axios.post(PORT/api/catfacts, body).then(factsCallback);
 
 
 // takes care of form submission

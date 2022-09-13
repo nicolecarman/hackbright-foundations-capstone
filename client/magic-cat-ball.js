@@ -4,7 +4,7 @@ const catFactsList = document.querySelector('#display-answers');
 const askTheCatBtn = document.getElementById("askTheCatBtn");
 
 // for deployment to netlify
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 // set API to variable
 //const baseURL = `http://localhost:4000/api/catfacts`;
@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 
 // axios request
 const getAnswer = () => {
-    axios.get(port, "/api/answers/")
+    axios.get(PORT, "/api/answers/")
         .then(res => {
             const data = res.data;
 
