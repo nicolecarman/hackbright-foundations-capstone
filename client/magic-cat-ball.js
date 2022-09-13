@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4000;
 
 // axios request
 const getAnswer = () => {
-    axios.get(PORT, `/api/answers/`)
+    axios.get(`${PORT}/api/answers/`)
         .then(res => {
             const data = res.data;
 
