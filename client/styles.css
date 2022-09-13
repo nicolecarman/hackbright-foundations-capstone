@@ -25,9 +25,40 @@ a:hover {
 }
 .content {
     padding-top: 75px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 275px;
+    margin-right: 275px;
 }
+.copyright {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* INDEX SPECIFIC */
+#cat-facts-pusheen {
+    max-width: 50px;
+    height: auto;
+    margin-left: 700px;
+}
+#magic-cat-ball-pusheen {
+    max-width: 50px;
+    height: auto;
+    margin-left: 270px;
+}
+#meow-tac-toe-pusheen {
+    max-width: 60px;
+    height: auto;
+    margin-left: 800px;
+}
+#home-ptags {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+
+/* CAT FACTS! SPECIFIC */
 #addCatFactBtn {
     width: 130px;
     height: 35px;
@@ -52,8 +83,8 @@ input[type='text'] {
 .fact-card {
     background-color: #D8E2DC;
     border: 1px solid #9D8189;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 230px;
     margin: 20px; 
     padding: 15px;
     display: flex;
@@ -68,11 +99,10 @@ input[type='text'] {
 }
 .btns-container {
     width: 100%; 
-    margin: 5px;
+    margin: px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-evenly;
     font-size: 14px;
     position: absolute;
     bottom: 0px;
@@ -90,31 +120,33 @@ input[type='text'] {
     max-height: 45px;
     width: auto;
 }
-.copyright {
-    font-size: 14px;
-    text-align: center;
+#peeking-cat-img {
+    display: flex;
+    justify-content: center;
 }
-#cat-facts-pusheen {
-    max-width: 50px;
+#peek-cat {
+    max-width: 500px;
     height: auto;
-    margin-left: 700px;
-}
-#magic-cat-ball-pusheen {
-    max-width: 50px;
-    height: auto;
-    margin-left: 140px;
-}
-#meow-tac-toe-pusheen {
-    max-width: 60px;
-    height: auto;
-    margin-left: 785px;
-}
-#home-ptags {
-    margin-top: 0px;
-    padding-top: 0px;
 }
 
-/* GAME BUTTONS */
+
+
+/* MAGIC CAT BALL SPECIFIC */
+#answer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cat-img {
+    max-width: 350px;
+    height: auto;
+}
+#answer-card {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
 .sizing {
   width: 180px;
   height: 60px;
@@ -155,20 +187,75 @@ svg {
   font-weight: 100;
   font-family: 'Pacifico', cursive;
 }
-/* END OF GAME BUTTONS */
 
-#answer-container {
+
+
+/* MEOW-TAC-TOE SPECIFIC */
+#grid {
+    margin-top: 400px;
+    padding-bottom: 100px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(3, auto);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cell {
+    width: 100px;
+    height: 100px;
     display: flex;
-    align-items: center;
+    border: 1px solid #9D8189;
     justify-content: center;
-}
-#cat-img {
-    max-width: 350px;
-    height: auto;
-}
-#answer-card {
-    text-align: center;
-    display: flex;
     align-items: center;
-    padding-left: 50px;
+    font-size: 30px;
+}
+.cell:not(.disabled):hover {
+    background: #eee;
+}
+.cell:nth-child(-n + 3) {
+    border-top: none;
+}
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+.cell:nth-last-of-type(-n + 3) {
+    border-bottom: none;
+}
+.disabled {
+    cursor: not-allowed;
+}
+.calico::after {
+    content: url("images/calico-head.png");
+}
+.ginger::after {
+    content: url("images/ginger-head.png");
+}
+.results {
+    display: none;
+    position: relative;
+    box-shadow: rgb(216 226 220 / 50%) 0 0 0 9999px;
+}
+.results-text {
+    margin-top: 200px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #D8E2DC;
+}
+.restartBtn {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    margin-top: 50px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.visible {
+    display: block;
 }

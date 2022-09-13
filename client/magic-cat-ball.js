@@ -1,7 +1,7 @@
 // pull page elements
-const catFactsList = document.querySelector('#display-answers')
+const catFactsList = document.querySelector('#display-answers');
 
-const askTheCatBtn = document.getElementById("askTheCatBtn")
+const askTheCatBtn = document.getElementById("askTheCatBtn");
 
 
 // axios request
@@ -25,7 +25,7 @@ const getAnswer = () => {
                 answer.appendChild(hTag);
             } else {
                 // pull page elements
-                const hTagExisting = document.getElementById("cat-answer")
+                const hTagExisting = document.getElementById("cat-answer");
 
                 // remove previous answer from the cat and assign it a new value (answer from the cat)
                 hTagExisting.textContent = "";
@@ -35,4 +35,4 @@ const getAnswer = () => {
 };
 
 
-askTheCatBtn.addEventListener('click', getAnswer)
+askTheCatBtn.addEventListener('click', getAnswer);
