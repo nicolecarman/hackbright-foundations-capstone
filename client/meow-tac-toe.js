@@ -63,7 +63,7 @@ document.addEventListener('click', event => {
                 document.querySelector('.results').classList.add('visible');
 
                 document.querySelector('.results-text').textContent = calicoWins
-                    ? "Wow...you win.. Really?"
+                    ? "...You should be spending less time paying games and more time feeding me."
                     : "Defeat! You owe me a treat!";
             };
         });
