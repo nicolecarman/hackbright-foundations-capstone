@@ -64,6 +64,7 @@ app.post("/api/catfacts", addCatFact);
 
 // MAGIC CAT BALL
 const { getAnswer } = require('./controller')
+
 // local
 app.get("/api/answers", getAnswer);
 

@@ -3,6 +3,7 @@ const catFactsList = document.querySelector('#display-answers');
 
 const askTheCatBtn = document.getElementById("askTheCatBtn");
 
+
 // for deployment
 const PORT = process.env.PORT || 3000;
 
@@ -43,7 +44,3 @@ const getAnswer = () => {
 
 
 askTheCatBtn.addEventListener('click', getAnswer);
-
-
-// listening
-app.listen(PORT, () => console.log(`Server up on ${PORT}`));
