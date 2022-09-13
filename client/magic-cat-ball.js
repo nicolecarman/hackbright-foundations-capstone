@@ -3,7 +3,7 @@ const catFactsList = document.querySelector('#display-answers');
 
 const askTheCatBtn = document.getElementById("askTheCatBtn");
 
-// for deployment to netlify
+// for deployment
 const PORT = process.env.PORT || 4000;
 
 // set API to variable

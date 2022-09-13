@@ -2,7 +2,7 @@
 const catFactsList = document.querySelector('#catFacts-list');
 const form = document.querySelector('form');
 
-// for deployment to netlify
+// for deployment
 const PORT = process.env.PORT || 4000;
 
 // set API to variable
