@@ -4,10 +4,6 @@ const catFactsList = document.querySelector('#display-answers');
 const askTheCatBtn = document.getElementById("askTheCatBtn");
 
 
-// for deployment
-const PORT = process.env.PORT || 3000;
-
-
 // set API to variable
 //const baseURL = `http://localhost:4000/api/catfacts`;
 

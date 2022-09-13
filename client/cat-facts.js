@@ -3,9 +3,6 @@ const catFactsList = document.querySelector('#catFacts-list');
 const form = document.querySelector('form');
 
 
-// for deployment
-const PORT = process.env.PORT || 4000;
-
 // set API to variable (local only)
 // const baseURL = `http://localhost:4000/api/catfacts`;
 

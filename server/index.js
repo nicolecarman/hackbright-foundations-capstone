@@ -74,4 +74,4 @@ app.get("/api/answers", getAnswer);
 
 
 // listening
-app.listen(PORT, () => console.log(`Server up on ${PORT}`));
+app.listen(PORT, () => console.log(`Server is up on ${PORT}`));
