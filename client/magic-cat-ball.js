@@ -43,3 +43,7 @@ const getAnswer = () => {
 
 
 askTheCatBtn.addEventListener('click', getAnswer);
+
+
+// listening
+app.listen(PORT, () => console.log(`Server up on ${PORT}`));
