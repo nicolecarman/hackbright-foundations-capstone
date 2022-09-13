@@ -16,7 +16,7 @@ const getAllFacts = () => axios.get(`${PORT}/api/catfacts`).then(factsCallback);
 
 const editCatFact = (id, type) => axios.put(`${PORT}/api/catfacts/${id}`, {type}).then(factsCallback);
 
-const addCatFact = body => axios.post(PORT/api/catfacts, body).then(factsCallback);
+const addCatFact = body => axios.post(`${PORT}/api/catfacts`, body).then(factsCallback);
 
 
 // takes care of form submission
