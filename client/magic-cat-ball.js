@@ -10,7 +10,7 @@ const askTheCatBtn = document.getElementById("askTheCatBtn");
 
 // axios request
 const getAnswer = () => {
-    axios.get(`${PORT}/api/answers`)
+    axios.get(`/api/answers`)
         .then(res => {
             const data = res.data;
 

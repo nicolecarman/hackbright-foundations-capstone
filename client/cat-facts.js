@@ -1,5 +1,6 @@
 // pull page elements
 const catFactsList = document.querySelector('#catFacts-list');
+
 const form = document.querySelector('form');
 
 
@@ -10,11 +11,11 @@ const form = document.querySelector('form');
 // axios requests
 const factsCallback = ({ data: catFacts }) => displayCatFacts(catFacts);
 
-const getAllFacts = () => axios.get(`${PORT}/api/catfacts`).then(factsCallback);
+const getAllFacts = () => axios.get(`/api/catfacts`).then(factsCallback);
 
-const editCatFact = (id, type) => axios.put(`${PORT}/api/catfacts/${id}`, {type}).then(factsCallback);
+const editCatFact = (id, type) => axios.put(`/api/catfacts/${id}`, {type}).then(factsCallback);
 
-const addCatFact = body => axios.post(`${PORT}/api/catfacts`, body).then(factsCallback);
+const addCatFact = body => axios.post(`/api/catfacts`, body).then(factsCallback);
 
 
 // takes care of form submission
