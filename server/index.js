@@ -9,6 +9,10 @@ app.use(express.json());
 app.use(cors());
 
 
+// for deployment
+const PORT = process.env.PORT || 4000;
+
+
 // deployment
 app.use(express.static(path.join(__dirname, "../client")));
 
