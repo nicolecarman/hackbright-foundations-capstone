@@ -63,7 +63,7 @@ document.addEventListener('click', event => {
                 document.querySelector('.results').classList.add('visible');
 
                 document.querySelector('.results-text').textContent = calicoWins
-                    ? "...You should be spending less time paying games and more time feeding me."
+                    ? "...You should be spending less time paying games and more time petting me."
                     : "Defeat! You owe me a treat!";
             };
         });

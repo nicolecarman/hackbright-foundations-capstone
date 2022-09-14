@@ -60,7 +60,7 @@ app.get("/meowtactoe", (req, res) => {
 // CAT FACTS
 const {getCatFact, editCatFact, addCatFact} = require("./controller");
 
-// local
+// local endpoints
 app.get("/api/catfacts", getCatFact);
 app.put('/api/catfacts/:id', editCatFact);
 app.post("/api/catfacts", addCatFact);
