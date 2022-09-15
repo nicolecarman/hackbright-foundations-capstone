@@ -10,7 +10,11 @@ const askTheCatBtn = document.getElementById("askTheCatBtn");
 
 // axios request
 const getAnswer = () => {
-    axios.get(`/api/answers`)
+    // DEPLOYED:
+    // axios.get(`/api/answers`)
+    
+    // LOCAL:
+    axios.get("http://localhost:4000/api/answers/")
         .then(res => {
             const data = res.data;
 

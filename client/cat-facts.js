@@ -4,11 +4,22 @@ const catFactsList = document.querySelector('#catFacts-list');
 const form = document.querySelector('form');
 
 
-// set API to variable (local only)
-// const baseURL = `http://localhost:4000/api/catfacts`;
-
+// FOR LOCAL:
+// set API to variable
+const baseURL = `http://localhost:4000/api/catfacts`
 
 // axios requests
+const factsCallback = ({ data: catFacts }) => displayCatFacts(catFacts)
+
+const getAllFacts = () => axios.get(baseURL).then(factsCallback)
+
+const editCatFact = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(factsCallback)
+
+const addCatFact = body => axios.post(baseURL, body).then(factsCallback)
+
+
+/*
+// DEPLOYED REQUESTS:
 const factsCallback = ({ data: catFacts }) => displayCatFacts(catFacts);
 
 const getAllFacts = () => axios.get(`/api/catfacts`).then(factsCallback);
@@ -16,6 +27,7 @@ const getAllFacts = () => axios.get(`/api/catfacts`).then(factsCallback);
 const editCatFact = (id, type) => axios.put(`/api/catfacts/${id}`, {type}).then(factsCallback);
 
 const addCatFact = body => axios.post(`/api/catfacts`, body).then(factsCallback);
+*/
 
 
 // takes care of form submission

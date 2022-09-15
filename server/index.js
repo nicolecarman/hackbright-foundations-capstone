@@ -73,5 +73,10 @@ const { getAnswer } = require('./controller')
 app.get("/api/answers", getAnswer);
 
 
+// LOCAL:
 // listening
-app.listen(PORT, () => console.log(`Server is up on ${PORT}`));
+app.listen(4000, () => console.log("Server running on 4000"));
+
+//DEPLOYMENT:
+// listening
+//app.listen(PORT, () => console.log(`Server is up on ${PORT}`));
