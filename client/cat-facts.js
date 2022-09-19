@@ -8,6 +8,7 @@ const form = document.querySelector('form');
 // set API to variable
 //const baseURL = `http://localhost:4000/api/catfacts`
 
+/*
 // axios requests
 const factsCallback = ({ data: catFacts }) => displayCatFacts(catFacts)
 
@@ -16,7 +17,7 @@ const getAllFacts = () => axios.get(baseURL).then(factsCallback)
 const editCatFact = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(factsCallback)
 
 const addCatFact = body => axios.post(baseURL, body).then(factsCallback)
-
+*/
 
 
 // DEPLOYED REQUESTS:
